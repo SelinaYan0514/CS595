@@ -1,8 +1,7 @@
 # Assignment 3: Bitcoin Transaction and Generation
 
 ## Introduction
-In this assignment, you will delve into the practical aspects of Bitcoin.  
-Your task will involve understanding Bitcoin transactions, specifically focusing on **transaction scripts**.  
+In this assignment, you will delve into the practical aspects of Bitcoin. Your task will involve understanding Bitcoin transactions, specifically focusing on **transaction scripts**.  
 You will apply your **Python skills** to solve a real-world challenge: **accepting and spending Bitcoin funds**.
 
 ---
@@ -17,7 +16,7 @@ As seen in class, some of the common types of `scriptPubKey` are:
 
 - **P2PKH (Pay-to-Public-Key-Hash)**  
   Specifies a hash digest and requires a public key that hashes to the digest, alongside a matching signature on the transaction.  
-  A P2PKH script is of the form:
+  A P2PKH script is of the form: `OP_DUP, OP_HASH160, hash, OP_EQUALVERIFY, OP_CHECKSIG`
 
 
 The corresponding addresses are called **"P2PK address"** and **"P2PKH address"** respectively, because the owner of a public key can tell people to send money to their public key simply by telling them what `scriptPubKey` (of either form) to use in a new TXO.
@@ -48,4 +47,4 @@ Your challenge is to:
 ---
 
 ## Instructions
-Follow the steps below to complete the assignment.
+Follow the steps in Jupyter Notebook below to complete the assignment.
